@@ -1,0 +1,46 @@
+import logo from './logo.svg';
+import './App.css';
+import {ethers} from 'eth-provider';
+import contractABI from './cc';
+import stats from './ddd';
+let Virat, Sachin, Rahul = stats;
+const contractAddress = '0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8';
+ 
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+        playerstats
+        Soham Dutta
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         
+         <button onClick="connect">RunsOfVirat</button>
+          <input type="text" id= "STATSOFVIRAT" STATS="RUNS"></input> 
+          <button onClick="connect">RunsOfSachin</button>
+          <input type="text" id= "STATSOFSACHIN" STATS="RUNS"></input>
+            
+          <button onClick="connect">RunsOfRahul</button>
+          <input type="text" id= "STATSOFRAHUL" STATS="RUNS"></input>
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+console.log(ethers);
+console.log(contractABI);
+console.log(contractAddress);
+console.log(Virat);
+console.log(Sachin);
+console.log(Rahul);
